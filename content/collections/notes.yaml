@@ -1,0 +1,15 @@
+title: Notes
+template: notes/show
+layout: layout
+revisions: false
+route: '/notes/{slug}'
+date: true
+sort_dir: desc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
