@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{{ title ?? site:name }}</title>
+        {{ livewire:styles }}
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
     <body class="bg-rose-100 font-sans leading-normal text-gray-800">
@@ -13,5 +14,6 @@
         >
             {{ template_content }}
         </div>
+        {{ livewire:scripts }}
     </body>
 </html>

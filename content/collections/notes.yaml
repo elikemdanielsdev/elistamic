@@ -1,6 +1,6 @@
 title: Notes
 template: notes/show
-layout: layout
+layout: layouts/layout
 revisions: false
 route: '/notes/{slug}'
 date: true
