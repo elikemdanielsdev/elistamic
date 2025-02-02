@@ -14,7 +14,9 @@
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
         "marcorieser/statamic-livewire": "^4.0",
-        "statamic/cms": "^5.0"
+        "marcorieser/tailwind-merge-statamic": "^1.1",
+        "statamic/cms": "^5.0",
+        "stillat/antlers-components": "^2.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8.1",

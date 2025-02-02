@@ -8,7 +8,7 @@ use Statamic\Facades\Entry;
 class ShowNotes extends Component
 {
 
-  protected function entries()
+  public function entries()
   {
     return Entry::query()
       ->where('collection', 'notes')
@@ -17,6 +17,6 @@ class ShowNotes extends Component
 
   public function render()
   {
-    return view('livewire.show-notes', $this->entries());
+    return view('livewire.show-notes');
   }
 }
