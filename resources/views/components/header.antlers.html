@@ -1,0 +1,9 @@
+<header>
+    <nav>
+        <ul class="flex gap-4">
+          {{ nav:main }}
+            <li><a wire:navigate class="{{ is_current ? 'bg-rose-200' : '' }}" href="{{ url }}">{{ title }}</a></li>
+          {{ /nav:main  }}
+        </ul>
+    </nav>
+</header>
