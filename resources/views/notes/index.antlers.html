@@ -1,7 +1,6 @@
-<article>
-    {{ collection:notes }} 
-      <ul>
-        <li><a wire:navigate href="{{ url }}">{{ title }} </li>
-      </ul>
-    {{ /collection:notes }}
-</article>
+{{ collection:notes }}
+  <article class="mt-4 bg-white p-8 shadow-xl rounded-xl max-w-xl prose">
+    <h2>{{ title }}</h2>
+    <p>{{ content }}</p>
+  </article>
+{{ /collection:notes }}
