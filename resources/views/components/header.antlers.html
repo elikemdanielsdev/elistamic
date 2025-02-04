@@ -1,9 +1,11 @@
-<header>
+{{ partial:components/section tag="header" class="bg-rose-200 py-2" }}
+  {{ partial:components/container }}
     <nav>
-        <ul class="flex gap-4">
-          {{ nav:main }}
-            <li><a wire:navigate class="{{ is_current ? 'bg-rose-200' : '' }}" href="{{ url }}">{{ title }}</a></li>
-          {{ /nav:main  }}
-        </ul>
+      <ul class="flex gap-4">
+        {{ nav:main }}
+          <li><a wire:navigate class="{{ is_current ? 'bg-rose-200' : '' }}" href="{{ url }}">{{ title }}</a></li>
+        {{ /nav:main }}
+      </ul>
     </nav>
-</header>
+  {{ /partial:components/container }}
+{{ /partial:components/section }}

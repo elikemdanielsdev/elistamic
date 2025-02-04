@@ -1,0 +1,9 @@
+{{ if tag == "section" || tag == "footer" || tag == "header" }}
+    <{{ tag }} class="{{'px-5 py-8 bg-amber-200 {class}' | tw_merge}}">
+        {{ slot }}
+    </{{ tag }}>
+{{ else }}
+    <section class="{{'px-5 py-8 bg-amber-200 {class}' | tw_merge}}">
+        {{ slot }}
+    </section>
+{{ /if }}
