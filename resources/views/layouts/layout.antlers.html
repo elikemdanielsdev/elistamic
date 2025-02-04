@@ -12,7 +12,7 @@
   </head>
   <body class="font-inter text-gray-900 min-h-screen flex flex-col">
     {{ partial:components/header }}
-    {{ partial:components/search-form }}
+    {{# {{ partial:components/search-form }} #}}
     <main class="flex-grow">{{ template_content }}</main>
     {{ partial:components/footer }}
     {{ livewire:scripts }}

@@ -1,9 +1,9 @@
-{{ partial:components/section tag="header" class="bg-rose-400 py-2" }}
+{{ partial:components/section tag="header" class="bg-green-200 py-2" }}
   {{ partial:components/container class="max-w-screen-xl" }}
     <nav>
       <ul class="flex gap-4">
         {{ nav:main }}
-          <li><a wire:navigate class="{{ is_current ? 'bg-rose-200' : '' }}" href="{{ url }}">{{ title }}</a></li>
+          <li><a wire:navigate class="{{ is_current ? 'font-bold' : '' }}" href="{{ url }}">{{ title }}</a></li>
         {{ /nav:main }}
       </ul>
     </nav>
