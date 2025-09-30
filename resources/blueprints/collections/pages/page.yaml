@@ -19,6 +19,8 @@ tabs:
             field:
               type: replicator
               display: 'Page Builder'
+              collapse: true
+              button_label: 'Add a block'
               sets:
                 common_blocks:
                   display: 'Common Blocks'
