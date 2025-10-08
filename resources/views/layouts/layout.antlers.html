@@ -8,7 +8,13 @@
     {{ vite src="resources/js/site.js|resources/css/site.css" }}
 </head>
 <body class="font-sans antialiased scroll-smooth">
-    <main>
+    <header>
+        <nav>
+            <a href="{{ site:url }}">{{ site:name }}</a>
+            <a href="/introduction">Introduction</a>
+        </nav>
+    </header>
+    <main id="swup" class="transition-fade">
         {{ template_content }}
     </main>
 </body>
